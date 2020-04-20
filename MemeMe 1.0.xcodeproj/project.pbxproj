@@ -67,14 +67,14 @@
 				268776AB244A68B700B08FAE /* AppDelegate.swift */,
 				268776AD244A68B700B08FAE /* SceneDelegate.swift */,
 				268776AF244A68B700B08FAE /* CreateMemesViewController.swift */,
+				262E1E55244E27CF00E1C3F5 /* MemesTableTableViewController.swift */,
+				262E1E53244E264900E1C3F5 /* MemesCollectionViewController.swift */,
+				262E1E51244E25E000E1C3F5 /* MemeViewCell.swift */,
+				26D04454244B85D000FF0275 /* MemeStruct.swift */,
 				268776B1244A68B700B08FAE /* Main.storyboard */,
 				268776B4244A68B800B08FAE /* Assets.xcassets */,
 				268776B6244A68B800B08FAE /* LaunchScreen.storyboard */,
 				268776B9244A68B800B08FAE /* Info.plist */,
-				262E1E51244E25E000E1C3F5 /* MemeViewCell.swift */,
-				26D04454244B85D000FF0275 /* MemeStruct.swift */,
-				262E1E53244E264900E1C3F5 /* MemesCollectionViewController.swift */,
-				262E1E55244E27CF00E1C3F5 /* MemesTableTableViewController.swift */,
 			);
 			path = "MemeMe 1.0";
 			sourceTree = "<group>";

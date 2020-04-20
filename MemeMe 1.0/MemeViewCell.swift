@@ -6,4 +6,15 @@
 //  Copyright © 2020 Celina. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+// MARK: - MemeViewCell: UICollectionViewCell
+
+class MemeViewCell: UICollectionViewCell {
+    
+    // MARK: Outlets
+    @IBOutlet weak var imageView: UIImageView!
+
+    
+    
+}
