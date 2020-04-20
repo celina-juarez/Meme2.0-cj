@@ -138,6 +138,7 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
         let object = UIApplication.shared.delegate
         let appDelegate = object as! AppDelegate
         appDelegate.memes.append(meme)
+        print("CreateMemesViewController \(appDelegate.memes.count) \(meme)")
     }
     
     //puts everything together: original picture, topTexfield, and bottomTextField

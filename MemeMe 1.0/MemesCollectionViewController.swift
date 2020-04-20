@@ -18,11 +18,10 @@ class MemesCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("MemesCollectionViewController \(memes.count)")
         // Do any additional setup after loading the view.
     }
     
-
     /*
     // MARK: - Navigation
 
