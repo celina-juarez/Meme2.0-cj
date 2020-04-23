@@ -18,8 +18,7 @@ class MemesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.reloadData()
-        print("MemesTableViewController \(memes.count)")
+        print("didMemesTableViewController \(memes.count)")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,8 +29,12 @@ class MemesTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
-        print("MemesTableViewController \(memes.count)")
+        self.tableView.reloadData()
+        print("willMemesTableViewController \(memes.count)")
         
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     // MARK: - Table view data source

@@ -32,9 +32,6 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        topTextField.delegate = self
-//        bottomTextField.delegate = self
         
         //sets textFields default text
         topTextField.text = "TOP"
@@ -60,7 +57,6 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         unsubscribeFromKeyboardNotifications()
     }
 
@@ -132,6 +128,7 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
     
     //Creates the meme object
     func save() {
+        print("Save()")
         let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!,originalImage: imageView.image!, memedImage: generateMemedImage())
         
         // Add it to the memes array in the Application Delegate
@@ -196,13 +193,13 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
             (activityType, completed, items, error) in
             self.save()
         }
-
         self.present(controller, animated: true, completion: nil)
     }
     
     @IBAction func selectCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     
 }
 
