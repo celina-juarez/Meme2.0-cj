@@ -191,7 +191,10 @@ class CreateMemesViewController: UIViewController, UIImagePickerControllerDelega
         
         controller.completionWithItemsHandler = {
             (activityType, completed, items, error) in
-            self.save()
+            if completed {
+                self.save()
+            }
+            
         }
         self.present(controller, animated: true, completion: nil)
     }
